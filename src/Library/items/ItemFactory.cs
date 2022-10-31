@@ -12,6 +12,8 @@ namespace RoleplayGame.Items
         Zancos = 5,
         MataEnenaos = 6,
         PowerGlove = 7,
+        Palo=8,
+        Coraza=9,
     }
 
     /// <summary>
@@ -30,6 +32,11 @@ namespace RoleplayGame.Items
             {
                 case ItemType.Magic: return new Magic();
                 case ItemType.Robes: return new Robes();
+                case ItemType.CopperShield: return new CopperShield();
+                case ItemType.Coraza: return new Coraza();
+                case ItemType.Escarbadientes: return new Escarbadientes();
+                case ItemType.MataEnanaos: return new MataEnenaos();
+                case ItemType.Palo: return new Palo();
 
                 default: return null;
             }

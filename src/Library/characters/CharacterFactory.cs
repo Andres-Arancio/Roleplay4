@@ -7,7 +7,8 @@ namespace RoleplayGame.Characters
     {
         Elf = 1,
         Wizard = 2,
-        Dwarf = 3
+        Dwarf = 3,
+        Troll=4
     }
 
     /// <summary>
