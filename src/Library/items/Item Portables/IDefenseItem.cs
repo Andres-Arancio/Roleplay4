@@ -3,7 +3,7 @@ namespace RoleplayGame.Items
     /// <summary>
     /// Interfaz que permite crear elementos de defensa.
     /// </summary>
-    public interface IDefenseItem: IItem
+    public interface IDefenseItem: IItemPortable
     {
         /// <summary>
         /// El poder de defensa.

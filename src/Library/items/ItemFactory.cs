@@ -7,11 +7,13 @@ namespace RoleplayGame.Items
     {
         Magic = 1,
         Robes = 2,
-        CopperShield = 4,
-        Escarbadientes=3,
-        MataEnanaos = 5,
-        Palo=6,
-        Coraza=7,
+        CopperShield = 3,
+        Escarbadientes = 4,
+        Zancos = 5,
+        MataEnenaos = 6,
+        PowerGlove = 7,
+        Palo=8,
+        Coraza=9,
     }
 
     /// <summary>

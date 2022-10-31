@@ -45,7 +45,7 @@ namespace RoleplayGame.Encounters
         /// </summary>
         public override void DoEncounter()
         {
-            foreach (IItem item in this.itemsToExchange)
+            foreach (IItemPortable item in this.itemsToExchange)
             {
                 this.Character1.RemoveItem(item);
                 this.Character2.AddItem(item);
