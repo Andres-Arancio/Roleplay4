@@ -26,7 +26,7 @@ namespace RoleplayGame.Items
         /// </summary>
         /// <param name="type">El tipo de elemento</param>
         /// <returns>El elemento</returns>
-        public static IItem GetItem(ItemType type)
+        public static IItemPortable GetItem(ItemType type)
         {
             switch (type)
             {

@@ -112,7 +112,7 @@ namespace Program
                     name = $"The {type}";
                 }
 
-                List<IItem> items = this.ReadCharacterItems();
+                List<IItemPortable> items = this.ReadCharacterItems();
 
                 Character character = CharacterFactory.GetCharacter(type, name);
                 character.AddItems(items);
@@ -154,9 +154,9 @@ namespace Program
         /// La función finaliza cuando el usuario ingresa la cadena vacía.
         /// </summary>
         /// <returns>Lista de items creados</returns>
-        private List<IItem> ReadCharacterItems()
+        private List<IItemPortable> ReadCharacterItems()
         {
-            List<IItem> items = new List<IItem>();
+            List<IItemPortable> items = new List<IItemPortable>();
 
             Console.WriteLine("Let's add items to your character");
 
@@ -164,7 +164,7 @@ namespace Program
             Console.WriteLine(type);
             while (type != default(ItemType))
             {
-                IItem item = ItemFactory.GetItem(type);
+                IItemPortable item = ItemFactory.GetItem(type);
                 items.Add(item);
                 this.AddObjectsToItem(item);
 
