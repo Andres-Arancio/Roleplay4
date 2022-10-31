@@ -9,7 +9,9 @@ namespace RoleplayGame.Items
         Robes = 2,
         CopperShield = 4,
         Escarbadientes=3,
-        MataEnenaos = 5,
+        MataEnanaos = 5,
+        Palo=6,
+        Coraza=7,
     }
 
     /// <summary>
