@@ -25,6 +25,8 @@ namespace RoleplayGame.Characters
             {
                 case CharacterType.Elf: return new Elf(name);
                 case CharacterType.Wizard: return new Wizard(name);
+                case CharacterType.Dwarf: return new Dwarf(name);
+                case CharacterType.Troll: return new Troll(name);
 
                 default: throw new System.Exception($"Invalid character {type}");
             }
