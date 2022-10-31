@@ -10,7 +10,7 @@ namespace RoleplayGame.Items
         CopperShield = 3,
         Escarbadientes = 4,
         Zancos = 5,
-        MataEnenaos = 6,
+        MataEnanos = 6,
         PowerGlove = 7,
         Palo=8,
         Coraza=9,
@@ -35,7 +35,7 @@ namespace RoleplayGame.Items
                 case ItemType.CopperShield: return new CopperShield();
                 case ItemType.Coraza: return new Coraza();
                 case ItemType.Escarbadientes: return new Escarbadientes();
-                case ItemType.MataEnanaos: return new MataEnenaos();
+                case ItemType.MataEnanos: return new MataEnanos();
                 case ItemType.Palo: return new Palo();
 
                 default: return null;

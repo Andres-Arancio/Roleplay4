@@ -3,7 +3,7 @@ namespace RoleplayGame.Items
     /// <summary>
     /// Item compuesto por Escarbadientes y Zancos.
     /// </summary>
-    public class MataEnenaos : IAttackItem, IDefenseItem
+    public class MataEnanos : IAttackItem, IDefenseItem
     {
         private Escarbadientes palito {get;set;} = new Escarbadientes();
         private Zancos zancos {get;set;} = new Zancos();
