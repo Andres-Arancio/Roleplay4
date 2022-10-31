@@ -35,6 +35,7 @@ namespace RoleplayGame.Items
                 case ItemType.CopperShield: return new CopperShield();
                 case ItemType.Coraza: return new Coraza();
                 case ItemType.Escarbadientes: return new Escarbadientes();
+                case ItemType.Zancos: return new Zancos();
                 case ItemType.MataEnanos: return new MataEnanos();
                 case ItemType.Palo: return new Palo();
 
