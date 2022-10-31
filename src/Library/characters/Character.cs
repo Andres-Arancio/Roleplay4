@@ -57,14 +57,14 @@ namespace RoleplayGame.Characters
             }
         }
 
-        public void AddItem(IItem item)
+        public void AddItem(IItemPortable item)
         {
             this.Items.Add(item);
         }
 
-        public void AddItems(List<IItem> items)
+        public void AddItems(List<IItemPortable> items)
         {
-            foreach (IItem item in items)
+            foreach (IItemPortable item in items)
             {
                 this.AddItem(item);
             }
@@ -84,7 +84,7 @@ namespace RoleplayGame.Characters
             get
             {
                 int attackPower = 0;
-                foreach (IItem item in this.items)
+                foreach (IItemPortable item in this.items)
                 {
                     if (item is IAttackItem)
                     {
@@ -104,7 +104,7 @@ namespace RoleplayGame.Characters
             get
             {
                 int defensePower = 0;
-                foreach (IItem item in this.items)
+                foreach (IItemPortable item in this.items)
                 {
                     if (item is IDefenseItem)
                     {
@@ -134,7 +134,7 @@ namespace RoleplayGame.Characters
         public override string ToString()
         {
             string items = "";
-            foreach (IItem item in this.items)
+            foreach (IItemPortable item in this.items)
             {
                 items += (items.Equals("") ? "" : ", ") + item.ToString();
             }
